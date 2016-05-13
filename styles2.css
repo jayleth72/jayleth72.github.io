@@ -1,0 +1,112 @@
+/* styles2 */
+
+body {
+	background: #f2f3ee url('../images/bg-tile.gif') top left repeat;
+	
+	font-family: 'Open Sans', 'Helvetica Nue', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialised;
+	text-rendering: optimizelegibility;
+}
+
+.container {
+    /* centers all content in browser */
+    width:960px;
+    margin: 0 auto;
+    
+
+}
+
+
+header img {
+    /* height of header image */
+    height: 250px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkblue;
+    text-align: center;
+}
+
+
+
+nav {
+    background-color: darkblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+nav ul {
+    /* gets rid of bullet points */
+    list-style: none;
+    padding: 0;
+    /* align text in list within center of container */
+   text-align: center;
+}
+
+nav ul li {
+    /* displays list of links horizontally accross page */
+    display: inline-block;
+    margin: 0 20px;
+    
+}
+
+nav a {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+a {
+	color: mintcream;
+    text-decoration: none;
+}
+
+
+/* mouse over link */
+a:hover {
+    color: yellow;
+}
+
+.article-container {
+   height: 450px;
+   overflow: hidden;
+   position: relative;
+   font-size: 16px;
+  
+}
+
+.article-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}    
+
+.article-container h1 {
+    position: absolute;
+    top: 0px;
+    left: 15px;
+ }
+ 
+ article {
+     position: absolute;
+     top: 60px;
+     left: 35px;
+     padding-right: 30px;
+ }
+
+
+footer {
+    background-color: darkblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    color: mintcream;
+    font-size: 12px;
+}
+
+

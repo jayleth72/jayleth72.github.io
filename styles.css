@@ -1,0 +1,83 @@
+/* Joyfull website style */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#logo {
+   position: center;
+}
+
+.my-container {
+    position: relative;
+    overflow: hidden;
+    width: 960px;
+    margin: 0 auto;
+}
+
+.my-container h1 {
+    padding: 100px;
+    position: relative;
+    z-index: 2;
+}
+
+.my-container img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+header {
+    text-align: center;
+    
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+   
+}   
+
+nav ul li {
+    display: inline-block;
+     margin: 0 20px;
+     
+}
+
+a:link {
+    text-transform: lowercase;
+    color: mintcream;
+}
+
+#logo-navigation {
+    align-content: center;
+    
+    background-color: darkblue;
+    padding-bottom: 15px;
+}
+
+footer {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 0px;
+    padding: 25px;
+    color: mintcream;
+    background-color: darkblue;
+}
+
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
