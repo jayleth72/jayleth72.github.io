@@ -1,85 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Joyfull Childhood</title>
-  
-    <meta charset="UTF-8">
-    <!-- Normaliz.css -->
-    <link rel="stylesheet" type="text/css" href="normalize.css">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" type="text/css" href="styles2.css">
-    
-    <!-- Search Engine optimization -->
-    <meta name="desscription" content="Cultural competence information for staff and clients"
-    
-    <!-- [if IE]>
-    <script src="http5shim.googlecode.com/svn/trunk/html5.js"></script>
-    
-</head>
-<body>
-    <div class="container">
-       
-        
-         <header>
-         
-            <a href="/">
-                <img src ="images/header.png" alt="Joyfull Childhood logo">
-            </a>
-            
-            <nav>
-                <ul>
-                    <li><a href="index.html" id="index">Philosophy</a></li>
-                    <li><a href="legislation.html" id="legislation">Legislation</a></li>
-                    <li><a href="policies.html" id="policies">Policies</a></li>
-                    <li><a href="staff.html"id="staff">Staff Awareness & Support</a></li>
-                    <li><a href="strategies.html" id="strategies">Strategies</a></li>
-                    <li><a href="contact.html" id="contact">Agency Information</a></li>
-                </ul>
-            </nav><!-- end nav -->
-           
-           
-            
-        </header><!-- end header -->
-        
-        <div class="article-container">
-            
-            
-            <h1>Our Philosophy</h1>
-            <img src='images/child_on_grass.jpg'> 
-            
-            <article>
-                
-            
-                <p>Our Care Centre's aim and philosophy is to
-                care for all individuals, regardless of race or religion.</p>
-                    
-                <p>Our aim is to develop the following;</p>
-                    <ol>
-                        <li>Develop our children, staff and community’s  cultural competence,</li>
-                        <br>
-                        <li>To teach respect for a variety of cultural methods of knowing, seeing, living, and to celebrate diversity.</li> 
-                        <br>
-                        <li> To understand and honour differences in race and religion.</li>
-                    </ol>
-                <br>    
-                                              
-                <p>Joyfull Childhood Family Day Care Aims to Identify, create, enjoy and enhance culture competence by providing a care centre 
-                    environment that nurtures, encourages and demonstrates cross-cultural knowledge and relationships.</p> 
+<html>
+	<head>
+		<title>Stacey Keating Fitness and Personal Training</title>
+		<meta name="description" content="Fitness and Personal Training for the York Peninsula, South Australia">
+		
+		<!-- Google Fonts Integration: http://www.google,com/fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700|Love+Ya+Like+A+Sister' rel='stylesheet' type='text/css'>
+						
+		<link rel="stylesheet" href="css/normalize.css">
+		
+		<!-- Icon image -->
+		<link rel="shortcut icon" href="images/favicon.ico">
+		
+		<!-- Custome CSS -->
+		<link rel="stylesheet" href="css/styles.css">
+		
+		<!-- Modernizr allows HTML5 elements to work in older browsers: http://modernizr.com/ -->
+		<script src="js/modernizr.js"></script>
+	</head>
+	<body>
+	
+		<div class="container">
+			<header class="main">
+				<nav>
+					<ul>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="location.html">Location</a></li>
+						<li><a href="services.html">Services</a></li>
+						
+						<li id="logo"><a href="index.html">Paw Print Logo</a></li>
+						<li><a href="timetable">Timetable</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="contact-us.html">Contact Us</a></li>
+					</ul>
+				</nav>
+			</header>
+		</div><!-- end container -->
+		
+		<div id="hero">
+		<div class="container">
+			
 
-                <p>This is our <strong>ongoing</strong> commitment that will be clearly noticeable by our relationships and 
-                in the encounters we offer the children.</p>  
-                       
-            </article><!-- end article -->     
-        
-        </div><!-- end article container -->
-        
-           
-        <footer>
-            <p>copyright &copy;2016 Joyfull Family Day Care Centre</p>
-        </footer><!-- end footer --> 
-        
-    </div><!-- end container -->    
-</body>
+				<img class="mySlides" src="images/pt0.jpg" style="width:100%">
+				<img class="mySlides" src="images/pt1.jpg" style="width:100%">
+				<img class="mySlides" src="images/pt2.jpg" style="width:100%">
+				<img class="mySlides" src="images/pt3.jpg" style="width:100%">
+				<img class="mySlides" src="images/pt4.jpg" style="width:100%">
+				<img class="mySlides" src="images/pt5.jpg" style="width:100%">
+
+						
+		</div><!-- end container -->
+		</div>
+			
+		<script>
+			var myIndex = 0;
+			carousel();
+
+			function carousel() {
+				var i;
+				var x = document.getElementsByClassName("mySlides");
+				for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+				}
+				myIndex++;
+				if (myIndex > x.length) {myIndex = 1}    
+				x[myIndex-1].style.display = "block";  
+				setTimeout(carousel, 2000); // Change image every 2 seconds
+			}
+		</script>
+		
+		<footer class="main">
+			<div class="container clearfix">
+				
+				<div id="uncopyright">
+					&copy; 2016 <strong>OTG Web Solutions</strong>
+					
+				</div><!-- end uncopyright -->
+				
+				<div id="credits">
+					<p>Email <a href="mailto:jay.letheby@gmail.com">Stacey</a> Today for more information </p>
+				</div><!-- end credits -->
+				
+			</div><!-- end container -->
+		</footer>
+	</body>
 </html>

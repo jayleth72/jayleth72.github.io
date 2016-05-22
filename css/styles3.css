@@ -1,0 +1,359 @@
+/* ===============================
+   Author: Jason Letheby
+   Date:   26 January 2016
+   
+   Notes:
+   Hand coded for Build a Website
+   from Scratch with HTML & CSS
+   by Jason Letheby
+   
+   Colour Palette:
+   ---------------
+   Light Cream:		#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   =============================== */
+
+/* General */
+
+body {
+	background: #f2f3ee url('../images/bg-tile.gif') top left repeat;
+	color: #4b2707;
+	font-size: 14px;
+	font-family: 'Open Sans', 'Helvetica Nue', Helvetica, Arial, sans-serif;
+	-webkit-font-smoothing: antialised;
+	text-rendering: optimizelegibility;
+}
+
+.container {
+	width: 924px;
+	margin: 0 auto;
+	padding: 30px 24px;
+}
+
+/* Typography */
+h1, h2 {
+	color: #d17f38;
+	font-size: 40px;
+	font-weight: normal;
+	font-family: 'Love Ya Like A Sister', cursive;
+	line-height: 44px;
+	margin: 0;
+}
+
+h1 {
+	text-align: center;
+	padding: 0 0 20px;
+	background: url('../images/header-divider.png') bottom center no-repeat;
+}
+
+h1 em {
+	font-style: normal;
+	color: #4b2707;
+}
+
+h2 {
+	font-size: 34px
+}
+	
+h3 {
+	margin: 0;
+}
+
+p.lead {
+	font-size: 30px;
+	/* google fonts light or designated weight */
+	font-weight: 300;
+	text-align: center;
+	margin: 10px 0;
+}
+
+p {
+	margin: 0;
+}
+
+a:link {
+	color: #d17f38;
+}
+
+a:visited {
+	color: #d17f38;
+}
+
+a:hover {
+	color: #4b2707;
+}
+
+hr  {
+	border: none;
+	/* height of image */
+	height: 33px;
+	width: 333px;
+	margin: 30px auto;
+	background: url('../images/divider.png') center center no-repeat;
+	
+}
+
+/* Header */
+
+header nav {
+	text-align: center;
+}
+
+header nav ul {
+	margin: 0;
+	padding: 0;
+	/* removes bullets from list */
+	list-style: none;
+	display: block;
+	/* same height as logo image */
+	line-height: 141px;
+}
+
+header nav ul li {
+	display: inline-block;
+	padding: 0 20px;
+}
+
+header nav ul li a {
+	text-transform: uppercase;
+	/* no underline of links */
+	text-decoration: none;
+	font-weight: bold;
+}
+
+header nav ul li#logo a {
+	display: block;
+	width: 280px;
+	height: 210px;
+	background: url('../images/k9logo.png') center center no-repeat;
+	/* removes texr "Donut whole from screen" */
+	text-indent: -9999px;
+}
+
+
+header nav ul li#logo a:hover {
+	/* stops movement/jigging of page when you hover over the logo */
+	padding: 0;
+	background: url('../images/paw-print-move.png') center center no-repeat;
+}
+
+
+/* Hero */
+
+#hero {
+	background: #e8c04f url('../images/bg-tile-yellow.gif') top left repeat;
+}
+
+/* this is to position the image below in <p class="large-ribbon"> in the correct position in the top right of the container */
+#hero .container {
+	position: relative;
+}
+
+#hero .large-ribbon {
+	/* width and height reflect size of image */
+	height: 190px;
+	width: 150px;
+	background: url('../images/trusted-reliable-caring.png') top left no-repeat;
+	/* remove text in <p> tag */
+	text-indent: -9999px;
+	position: absolute;
+	top: -23px;
+	right: -30px;
+}
+
+
+/* The Whole Story */
+
+#story-excerpt {
+	width: 530px;
+	margin-right: 24px;
+	float: left;
+}
+
+#best-donut {
+	background: url('../images/award.png') left center no-repeat;
+	padding: 30px 0 30px 130px;
+	float: left;
+	width: 240px;
+}
+
+
+/* News & Events */
+
+#articles {
+	width: 370px;
+	float: left;
+	margin-right: 24px;
+}
+
+#feature-image{
+	width: 530px;
+	float: left;
+}
+
+#news-events article {
+	margin: 20px 0;
+	padding-left: 55px;
+}
+
+#news-events article.news {
+	background: url('../images/icon-news.png') top left no-repeat;
+}
+
+#news-events article.events{
+	background: url('../images/icon-calendar.png') top left no-repeat;
+}
+
+
+.desciption-page {
+	padding-top: 30px;
+	/* this provides padding from header to main sections in all other pages except index page */
+}
+
+#news-events header time {
+	color: #d17f38;
+	font-size: 14px;
+}
+
+#news-events section.excerpt {
+	margin: 10px 0;
+}
+
+#news-events footer {
+	font-size: 12px;
+}
+
+/* Footer */
+
+footer.main {
+	background: #4b2707 url('../images/bg-tile-brown.gif') top left repeat;
+	color: #f2f3ee;
+	padding: 30px 0;
+}
+
+footer.main a:hover {
+	color: #f2f3ee;
+}
+
+#uncopyright, #credits {
+	width: 240px;
+	float: left;
+	padding: 10px 0 10px 50px;
+}
+
+#uncopyright {
+	background: url('../images/icon-recycle.png') center left no-repeat;
+}
+
+#credits{
+	background: url('../images/icon-apple.png') center left no-repeat;
+	float: right;
+	margin-top: 5px;
+}
+
+/* Forms */
+
+form {
+	padding: 20px;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+form fieldset {
+	padding: 40px;
+	border: solid 1px black;
+	}
+	
+form legend {
+	border: solid 1px #333;
+	padding: 5px;
+	font-size: 30px;
+	font-weight: bold;
+}	
+
+form input, form textarea {
+	display: block;
+	margin-bottom: 20px;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+	
+}
+
+form label {
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+form input[type="text"], form input[type="email"], form textarea {
+	padding: 10px;
+	font-size:20px;
+	font-family: Helvetica, Arial, serif;
+	color: black;
+	border: solid 1px #b90707;
+	}
+	
+form textarea {
+	width: 300px;
+	height: 100px;
+}	
+
+form input[type="submit"] {
+	border: none;
+	background: url('../images/Button-Background.jpg') top left repeat-x;
+	height: 40px;
+	padding: 0 20px;
+	border: solid 1px #d4730c;
+	color: black;
+	font-weight: bold;
+	font-family: Helvetica, Arial, serif;
+	cursor: pointer;
+}
+
+#map {
+	width: 500px;
+	height: 400px;
+	background-color: #CCC;
+	float: left;
+}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	content: "";
+	clear: both;
+	height: 0;
+	}
+* html .group             { zoom: 1; } /* IE6 */
+*:first-child+html .group { zoom: 1; } /* IE7 */
+
+
+
+
+
