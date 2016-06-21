@@ -128,7 +128,7 @@ header nav ul li#logo a {
 	width: 375px;
 	height: 275px;
 	background: url('../images/logo_main.png') center center no-repeat;
-	/* removes texr "Donut whole from screen" */
+	/* removes text "Donut whole from screen" */
 	text-indent: -9999px;
 }
 
