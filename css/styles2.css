@@ -2,6 +2,7 @@
 
 .navbar-default {
     background-color: #33ccff;
+    margin-bottom: 0;
  }
 
 
@@ -23,7 +24,7 @@
 }
 
 .carousel .item {
-    border-radius: 10px;
+    border-radius: 20px;
     background-color: rgba(0,0,0,0);
     overflow: hidden;
 }
@@ -56,6 +57,7 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 200px;
   background: url('../images/noisy.png');
+  
 }
 
 /* Sticky footer styles
