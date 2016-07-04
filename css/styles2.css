@@ -92,11 +92,11 @@ body {
 }
 @media only screen and (min-width:1px) and (max-width: 407px)  {
     body {
-        margin-bottom: 375px;
+        margin-bottom: 395px;
     }
 
     #footer {
-        height: 350px; 
+        height: 375px; 
     }
 }
 @media only screen and (min-width:408px) and (max-width: 768px)  {
