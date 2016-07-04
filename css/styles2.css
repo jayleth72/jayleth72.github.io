@@ -84,14 +84,18 @@ body {
 
 #footer {
   position: absolute;
-  font-size: 18px;
+  font-size: 16px;
   color: #9af7fe;
   width: 100%;
   bottom: 0; 
   font-family: proxima-nova;
   background-color: #6666ff;
-  
 }
+
+#footer h4{
+    text-transform: uppercase;
+}
+
 @media only screen and (min-width:1px) and (max-width: 407px)  {
     body {
         margin-bottom: 425px;
