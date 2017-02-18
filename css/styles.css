@@ -1,395 +1,124 @@
-/* ===============================
-   Author: Jason Letheby
-   Date:   26 January 2016
-   
-   Notes:
-   Hand coded for Build a Website
-   from Scratch with HTML & CSS
-   by Jason Letheby
-   
-   Colour Palette:
-   ---------------
-   Light Cream:		#f2f3ee
-   Orange:			#d17f38
-   Yellow:			#e8c04f
-   Brown:			#4b2707
-   =============================== */
 
-/* General */
 
+.navbar-default {
+    background-color: #fff;
+    margin-bottom: 0;
+ }
+
+
+
+.navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-nav > li > a{
+    font-family: proxima-nova;
+    font-style: normal;
+    font-weight: 100;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: black;
+}
+
+/* Carousel formatting
+-------------------------------------------------- */
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.carousel .item {
+    border-radius: 20px;
+    background-color: rgba(0,0,0,0);
+    overflow: hidden;
+}
+.carousel-control {
+    border-radius: 20px;
+}
+
+.carousel .item {
+    width: 100%; /*slider width*/
+    max-height: 400px; /*slider height*/
+}
+.carousel .item img {
+    width: 100%; /*img width*/
+}
+
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+/* Body
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
 body {
-	background: #f2f3ee url('../images/bg-tile.gif') top left repeat;
-	color: #4b2707;
-	font-size: 14px;
-	font-family: 'Open Sans', 'Helvetica Nue', Helvetica, Arial, sans-serif;
-	-webkit-font-smoothing: antialised;
-	text-rendering: optimizelegibility;
-}
-
-.container {
-	width: 1090x;
-	margin: 0 auto;
-	padding: 30px 24px;
-}
-
-/* Typography */
-h1, h2 {
-	color: #6666ff;
-	font-size: 40px;
-	font-weight: normal;
-	font-family: 'Love Ya Like A Sister', cursive;
-	line-height: 44px;
-	margin: 0;
-}
-
-h1 {
-	text-align: center;
-	padding: 0 0 20px;
-	background: url('../images/header-divider.png') bottom center no-repeat;
-}
-
-h1 em {
-	font-style: normal;
-	color: #4b2707;
-}
-
-h2 {
-	font-size: 34px
-}
-	
-h3 {
-	margin: 0;
-}
-
-p.lead {
-	font-size: 30px;
-	/* google fonts light or designated weight */
-	font-weight: 300;
-	text-align: center;
-	margin: 10px 0;
-}
-
-p {
-	margin: 0;
-}
-
-a:link {
-	color: #6666ff;
-}
-
-a:visited {
-	color: #d17f38;
-}
-
-a:hover {
-	color: #4b2707;
-}
-
-hr  {
-	border: none;
-	/* height of image */
-	height: 33px;
-	width: 333px;
-	margin: 30px auto;
-	background: url('../images/divider.png') center center no-repeat;
-	
-}
-
-/* Header */
-
-header nav {
-	text-align: center;
-}
-
-header nav ul {
-	margin: 0;
-	padding: 0;
-	/* removes bullets from list */
-	list-style: none;
-	display: block;
-	/* same height as logo image */
-	line-height: 210px;
-}
-
-header nav ul li {
-	display: inline-block;
-	padding: 0 20px;
-}
-
-header nav ul li a {
-	text-transform: uppercase;
-	/* no underline of links */
-	text-decoration: none;
-	font-weight: bold;
-}
-
-header nav ul li#logo a {
-	display: block;
-	width: 375px;
-	height: 275px;
-	background: url('../images/logo_main.png') center center no-repeat;
-	/* removes text "Donut whole from screen" */
-	text-indent: -9999px;
-}
-
-
-header nav ul li#logo a:hover {
-	/* stops movement/jigging of page when you hover over the logo */
-	padding: 0;
-	background: url('../images/k9logo.png') center center no-repeat;
-}
-
-
-/* Hero */
-
-#hero {
-	background: #6666ff url('../images/bg-tile-yellow.gif') top left repeat;
-	
-}
-
-/* this is to position the image below in <p class="large-ribbon"> in the correct position in the top right of the container */
-#hero .container {
-	position: relative;
-	width: 55%;
-	
-}
-
-#hero .large-ribbon {
-	/* width and height reflect size of image */
-	height: 190px;
-	width: 150px;
-	background: url('../images/trusted-reliable-caring.png') top left no-repeat;
-	/* remove text in <p> tag */
-	text-indent: -9999px;
-	position: absolute;
-	top: -23px;
-	right: -30px;
-}
-
-
-/* The Whole Story */
-
-#story-excerpt {
-	width: 530px;
-	margin-right: 24px;
-	float: left;
-}
-
-#royal-dog{
-	background: url('../images/crown.gif') left center no-repeat;
-	padding: 30px 0 30px 40px;
-	float: left;
-	width: 240px;
-	
-}
-
-
-/* News & Events */
-
-#articles {
-	width: 370px;
-	float: left;
-	margin-right: 24px;
-}
-
-#feature-image{
-	width: 530px;
-	float: left;
+  /* Margin bottom by footer height */
+  margin-bottom: 200px;
+  background: url('../images/noisy.png');
 
 }
 
-#news-events article {
-	margin: 20px 0;
-	padding-left: 55px;
+/* Sticky footer styles
+-------------------------------------------------- */
+/*.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 200px;
+  font-size: 18px;
+  color: #efefef;
+
+  font-family: proxima-nova;
+  background-color: #6666ff;
+}*/
+
+#footer a {
+  color: #9af7fe;
+}
+#footer a:hover, a:focus {
+  color: black;
 }
 
-#news-events article.news {
-	background: url('../images/exercise.png') top left no-repeat;
+
+#footer {
+  position: absolute;
+  font-size: 16px;
+  color: #9af7fe;
+  width: 100%;
+  bottom: 0;
+  font-family: proxima-nova;
+  background-color: #6666ff;
 }
 
-#news-events article.benefits {
-	background: url('../images/health.png') top left no-repeat;
+#footer h4{
+    text-transform: uppercase;
 }
 
-#news-events article.events{
-	background: url('../images/dog-on-leash.png') top left no-repeat;
+@media only screen and (min-width:1px) and (max-width: 407px)  {
+    body {
+        margin-bottom: 425px;
+    }
+
+    #footer {
+        height: 450x;
+    }
 }
+@media only screen and (min-width:408px) and (max-width: 768px)  {
+    body {
+        margin-bottom: 375px;
+    }
 
-.contact-details {
-	background: url('../images/phone-icon.png') top left no-repeat;
+    #footer {
+        height: 350px;
+    }
 }
+@media only screen and (min-width:769px)   {
+    body {
+        margin-bottom: 225px;
+    }
 
-#news-events article.who-is{
-	background: url('../images/question-mark.png') top left no-repeat;
+    #footer {
+        height: 200px;
+    }
 }
-
-#news-events article.location-image{
-	background: url('../images/map.png') top left no-repeat;
-}
-
-news-events article.textWrapImage{
-	float: right;
-	margin: 10 10;
-}
-
-.textWrapImage{
-	float: right;
-	margin-left: 20;
-	margin-top: 20;
-}
-
-.desciption-page {
-	padding-top: 30px;
-	/* this provides padding from header to main sections in all other pages except index page */
-}
-
-#news-events header time {
-	color: #d17f38;
-	font-size; 14px;
-}
-
-#news-events section.excerpt {
-	margin: 10px 0;
-}
-
-#news-events section.blog-post {
-	float: left;
-}
-
-#news-events footer {
-	font-size: 12px;
-}
-
-/* Footer */
-
-footer.main {
-	background: #3333ff url('../images/bg-tile-brown.gif') top left repeat;
-	color: #f2f3ee;
-	padding: 30px 0;
-}
-
-footer.main a:hover {
-	color: #f2f3ee;
-}
-
-#uncopyright, #credits {
-	width: 240px;
-	float: left;
-	padding: 10px 0 10px 50px;
-}
-
-#uncopyright {
-	background: url('../images/otg.png') center left no-repeat;
-	margin-top: 5px;
-}
-
-#credits{
-	background: url('../images/icon-apple.png') center left no-repeat;
-	float: right;
-	margin-bottom: 5px;
-}
-
-/* Forms */
-
-form {
-	padding: 20px;
-	font-family: Helvetica, Arial, sans-serif;
-}
-
-form fieldset {
-	padding: 40px;
-	border: solid 1px black;
-	}
-	
-form legend {
-	border: solid 1px #333;
-	padding: 5px;
-	font-size: 30px;
-	font-weight: bold;
-}	
-
-form input, form textarea {
-	display: block;
-	margin-bottom: 20px;
-	-webkit-font-smoothing: antialiased;
-	text-rendering: optimizelegibility;
-	
-}
-
-form label {
-	font-size: 11px;
-	text-transform: uppercase;
-}
-
-form input[type="text"], form input[type="email"], form textarea {
-	padding: 10px;
-	font-size:20px;
-	font-family: Helvetica, Arial, serif;
-	color: black;
-	border: solid 1px #b90707;
-	}
-	
-form textarea {
-	width: 300px;
-	height: 100px;
-}	
-
-form input[type="submit"] {
-	border: none;
-	background: url('../images/Button-Background.jpg') top left repeat-x;
-	height: 40px;
-	padding: 0 20px;
-	border: solid 1px #d4730c;
-	color: black;
-	font-weight: bold;
-	font-family: Helvetica, Arial, serif;
-	cursor: pointer;
-}
-
-#map {
-	width: 500px;
-	height: 400px;
-	background-color: #CCC;
-	float: left;
-}
-
-.success {
-  padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #468847;
-  background-color: #dff0d8;
-  border: 1px solid #d6e9c6;
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-
-.error {
-  padding: 1em;
-  margin-bottom: 0.75rem;
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
-  color: #b94a48;
-  background-color: #f2dede;
-  border: 1px solid rgba(185, 74, 72, 0.3);
-  -webkit-border-radius: 4px;
-     -moz-border-radius: 4px;
-          border-radius: 4px;
-}
-
-/* Force Elements to Self Clear its Children: http://css-tricks.com/snippets/css/clear-fix/ */
-
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	content: "";
-	clear: both;
-	height: 0;
-	}
-* html .group             { zoom: 1; } /* IE6 */
-*:first-child+html .group { zoom: 1; } /* IE7 */
-
-
-
-
-
