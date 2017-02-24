@@ -160,105 +160,12 @@ a.text-danger:hover {
 	background: #db4b39;
 }
 
-/* === CUSTOM ICON SPRITES === */
-
-i.ci {
-	display: inline-block;
-	height: 40px;
-	width: 40px;
-	background: url('../img/icon-sprite.png') no-repeat;
-}
-
-.ci.ci-computer 	{ background-position: 0 0; }
-.ci.ci-watch		{ background-position: -40px 0; }
-.ci.ci-calendar		{ background-position: -80px 0; }
-.ci.ci-community	{ background-position: -120px 0; }
-.ci.ci-instructor	{ background-position: -160px 0; }
-.ci.ci-device		{ background-position: -200px 0; }
-
-/* ==== FORMS ==== */
-
-label {
-	display: block;
-	font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="url"],
-input[type="password"],
-input[type="search"],
-textarea {
-	color: #666;
-	border: 1px solid #ccc;
-	border-radius: 3px;
-	display: block;
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	box-sizing: border-box;
-	width: 100%;
-	padding: 6px 12px;
-}
-
-input[type="submit"],
-button[type="submit"] {
-	display: inline-block;
-	margin-bottom: 0;
-	font-size: 18px;
-	font-weight: bold;
-	line-height: 1.33;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	cursor: pointer;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	background-image: none;
-	border: none;
-	border-radius: 6px;
-}
-
-input[type="submit"]:hover,
-button[type="submit"]:hover {
-	outline: none;
-	border: none;
-	background: #aaa;
-}
-
-form.search-form .form-group {
-	margin: 0;
-}
-
-form.search-form .input-group {
-	width: 100%;
-}
-
-form.search-form .input-group input[type="search"],
-form.search-form .input-group input[type="text"] {
-	width: 70%;
-}
-
-form.search-form .input-group input[type="submit"] {
-	width: 30%;
-	border-top-left-radius: 0;
-	border-bottom-left-radius: 0;
-	float: right;
-}
-
-form textarea {
-	width: 100%;
-	border: 1px solid #ccc;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-}
 
 /* ==== HERO ==== */
 
 #hero {
-	background: url('../img/gg_background.jpg') 50% 0 repeat fixed;
-	min-height: 500px;
+	background: url('../img/bottle_tree_edit.jpg') 50% 0 repeat fixed;
+	min-height: 600px;
 	position: relative;
 	display: table;
 	width: 100%;
@@ -440,11 +347,23 @@ section.main-content {
 
 
 #signup {
-	text-align: center;
-	background: url('../img/reuse.jpg') center center repeat fixed;
+	/*text-align: center;
+	background: url('../img/flower_edit1.jpg') center center repeat fixed;
 	background-size: cover;
 	color: white;
-	padding: 140px 0;
+	padding: 140px 0;*/
+
+  text-align: center;
+  background: url('../img/flower_edit1.jpg') 50% 0 repeat fixed;
+	min-height: 1000px;
+  background-size: cover;
+	position: relative;
+	display: table;
+	width: 100%;
+	padding: 40px 0;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
 }
 
 #signup h2 {
