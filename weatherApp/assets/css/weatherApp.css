@@ -68,7 +68,6 @@ label{
   content: "Wind speed is "
 }
 
-/*.body {
-  background-image: url("https://drive.google.com/uc?export=download&id=0B7cXcsMAP9XcSmFMOHFlWFhsOFE");
-
-}*/
+body {
+  background: url("../img/sunny.jpg");
+}
