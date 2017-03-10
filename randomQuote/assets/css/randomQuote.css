@@ -1,0 +1,59 @@
+.quoteContainer {
+margin-top: 200px;
+margin-left: 20px;
+margin-right: 20px;
+}
+
+#parent {
+    text-align: center;
+    color: #f44e42
+}
+
+#child {
+    margin: 0 auto;
+    display: inline-block;
+    color: white;
+
+}
+
+body {
+  background: #ffffb3
+}
+
+h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: 'Nexa Light', sans-serif;
+}
+
+p {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+blockquote {
+  font-size: 1.2em;
+  color: black;
+}
+
+blockquote::before {
+  content: "'";
+  color: blue;
+}
+blockquote::after {
+  content:"'";
+  color: blue;
+}
+
+#quoter::before{
+  content:"- "
+}
+
+button {
+  font-size: 1.2em;
+  border-radius: 5px;
+  padding: 10px 24px;
+  margin-top: 20px;
+
+}

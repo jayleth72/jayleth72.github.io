@@ -1,0 +1,172 @@
+/* ===============================
+   Author: Jason Letheby
+   Date:   26 January 2016
+
+   Notes:
+   Hand coded for Build a Website
+   from Scratch with HTML & CSS
+   by Jason Letheby
+
+   Colour Palette:
+   ---------------
+   Light Cream:		#f2f3ee
+   Orange:			#d17f38
+   Yellow:			#e8c04f
+   Brown:			#4b2707
+   =============================== */
+
+/* General */
+
+body {
+    margin-top: 50px;
+    font-family: 'Bodoni MT', 'Raleway', Helvetica, sans-serif;
+    font-size: 16px;
+    background: url('../img/tile.jpg') top left repeat;
+    
+}
+
+/* === Global === */
+
+h1, h2, h3, h4, h5, h6 {
+    -webkit-font-smoothing: antialised;
+    text-rendering: optimizeLegibility;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h1, h2 {
+    /* margin on the bottom */
+    margin: 0 0 40px;
+}
+
+h3 {
+    /* margin 20px top and bottom */
+    margin: 20px 0;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.remove-all-margin-padding{
+margin:0 ! important;
+padding:0 ! important;
+}
+
+/* ============================================ HEADER ============================================ */
+
+#site-header img {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.navbar-fixed-top {
+min-height: 80px;
+}
+
+.caret {
+  color: red;
+}
+
+/* ============================================ HER0 ============================================ */
+
+#hero {
+  background-color: #f44242;
+}
+
+#hero img {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.contact-buttons {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   margin-bottom: 20px;
+
+}
+
+.contact-buttons button{
+   margin: 5px;
+}
+
+.contact-buttons .btn {
+   min-width:250px;
+}
+
+.contact-buttons .btn-primary.raised {
+	box-shadow: 0 5px 0 0 #000;
+}
+
+.contact-buttons .btn-primary.raised:active, .btn-primary.raised.active {
+	background: #33a6cc;
+	box-shadow: none;
+	margin-bottom: -3px;
+	margin-top: 3px;
+}
+
+
+/* ============================================ INTRO ============================================ */
+
+#intro {
+    background-color: #f44242;
+}
+
+/* This format the intro description box */
+#jay-description {
+	 font-size: 16px;
+	 padding: 20px;
+	 background: #fff;
+	 border-radius: 10px;
+	 list-style-type: none;
+}
+
+/* This format the intro description box */
+#jay-description li{
+	  margin-top: 10px;
+	  padding: 10px;
+    border:3px solid black;
+}
+
+/* ============================================ WEB-GALLERY ============================================ */
+
+#web-gallery {
+  background-color: #f44242;
+}
+
+/* ============================================ CONNECT ============================================ */
+
+#connect {
+    background-color: #f44242;
+}
+
+#connect img {
+    width: 100%;
+}
+
+/* ============================================ FOOTER ============================================ */
+
+#footer a {
+  color: #9af7fe;
+}
+#footer a:hover, a:focus {
+  color: #ffbf80;
+}
+
+#footer {
+
+  font-size: 16px;
+  color: #fff;
+  width: 100%;
+  bottom: 0;
+  font-family: proxima-nova;
+  background-color: #000;
+}
+/*
+#footer h4{
+    text-transform: uppercase;
+}*/
