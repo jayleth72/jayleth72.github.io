@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Jays Weather App</title>
+    <!-- Custom Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/weatherApp.css"/>
+    <!-- Weather App code -->
+    <script type="text/javascript" src="assets/js/app.js"></script>
+  </head>
+  <body>
+
+    <div class="center-vert">
+
+      <h1>Jays Local Weather App</h1>
+
+        <div class="temp">
+          <span>
+            <img src="http://openweathermap.org/img/w/10d.png" id="icon" alt="weatherIcon"  />
+               <span id="temperature">0&deg</span>
+          </span>
+
+        </div><!-- temp -->
+
+        <div class="select_units">
+
+          <label> <input type="radio" name="select_units" value="celcius" checked="checked" onclick="updateUnits(this);">Celcius</label>
+          <label><input type="radio" name="select_units" value="fahrenheit" onclick="updateUnits(this);"> Fahrenheit</label>
+
+        </div><!-- select units -->
+
+        <div class="weather_results">
+
+          <div class="result_box"->
+             <span id="loc">Funky Town</span>
+          </div><!-- loc -->
+
+          <div class="result_box">
+            <span id="skyCondition">cloudy</span>
+          </div><!-- sky -->
+
+          <div class="result_box">
+            <span>
+              <span id="windDirection">N</span>
+            </span>
+
+          </div><!-- wind -->
+
+          <div class="result_box">
+            <span id="windSpeed">0 knots</span>
+          </div><!-- wind -->
+
+       </div><!-- weather_results -->
+     </div><!-- container -->
+
+    <!-- BOOSTRAP CORE JAVASCRIPT
+      ====================================================================================== -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+      <script src="../assets/js/jquery-2.2.3.js"></script>
+      <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

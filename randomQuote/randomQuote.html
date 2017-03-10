@@ -19,23 +19,29 @@
         <![endif]-->
   </head>
   <body onLoad=generateQuote();>
-      <div class="quoteContainer center-block" id="parent">
-        <h1>Jay's Random Quotation Machine</h1>
+    <div class="container clearfix">
 
-        <p>These are some of my favourite quotes from of my favourite people</p>
+      <div class="row">
 
-         <button class="btn-success btn" name="quote" onclick="generateQuote();">Generate Quote</button>
-            <div id="quotation">
+            <div class="col-sm-12 quoteContainer" id="parent">
 
-                <blockquote>
-                    quote goes here
+                <h1>Jay's Random Quotation Machine</h1>
 
-                </blockquote>
-                  <footer id="quoter">quote author</footer >
-            </div><!-- quatation -->
+                <p>These are some of my favourite quotes from of my favourite people</p>
 
+                 <button class="btn-success btn" name="quote" onclick="generateQuote();">Generate Quote</button>
+                    <div id="quotation">
 
-      </div><!-- parent -->
+                        <blockquote>
+                            quote goes here
+
+                        </blockquote>
+                          <footer id="quoter">quote author</footer >
+                    </div><!-- quatation -->
+
+            </div><!-- col-sm-8 col-sm-offset-4 -->
+        </div><!-- row -->
+      </div><!--container clearfix-->
 
      <!-- BOOSTRAP CORE JAVASCRIPT
        ====================================================================================== -->
