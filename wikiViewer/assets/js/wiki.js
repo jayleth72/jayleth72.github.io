@@ -8,6 +8,7 @@ $(document).ready(function(){
     $.ajax({
       type:"GET",
       url:url,
+      crossDomain:true,
       async:true,
       success:function(data){
         console.log(data);
