@@ -8,10 +8,16 @@ $(document).ready(function(){
     $.ajax({
       type:"GET",
       url:url,
-      crossDomain:true,
-      async:true,
+      async:false,
+      dataType: "json",
       success:function(data){
-        console.log(data);
+        // clear output content
+        $('#output').html('');
+        var i = 0
+        $(data[1]).each(function(){
+          $('#output').prepend("<li><a href=" + data[3][i] + ">" + data[1][i] + "</a><p>" + data[2][i] + "</p></li>");
+          i++;
+        });
       },
       error: function(errorMessage){
         alert("Error");

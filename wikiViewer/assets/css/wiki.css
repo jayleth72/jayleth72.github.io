@@ -1,0 +1,16 @@
+body {
+  font-family: 'Oxygen', sans-serif;
+  background-image: url('http://www.linguisticsociety.org/files/wikipedia_logo_detail.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #E9E9E9
+}
+
+h1 {
+  font-family: 'Baloo Bhaina', cursive;
+}
+
+.heading-image {
+  box-shadow: 10px 10px 10px 5px #888888;
+  display: inline-block;
+}

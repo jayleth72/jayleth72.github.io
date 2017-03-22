@@ -83,14 +83,14 @@ min-height: 80px;
 }
 
 .contact-buttons {
-   display: block;
+   display:block;
    margin-left: auto;
    margin-right: auto;
    margin-bottom: 20px;
 
 }
 
-.contact-buttons button{
+.contact-buttons a{
    margin: 5px;
 }
 
@@ -108,6 +108,7 @@ min-height: 80px;
 	margin-bottom: -3px;
 	margin-top: 3px;
 }
+
 
 
 /* ============================================ INTRO ============================================ */
