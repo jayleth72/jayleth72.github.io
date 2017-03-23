@@ -21,26 +21,31 @@
   </head>
   <body>
 
-    <div class="container">
-      <div class="text-center">
+    <div class="container text-center">
 
-        <h1>Jays Web App Projects</h1>
-        <h4>Wikipedia Search</h4>
+        <h1><a href="../index.html" title="Back to the Web Apps Home Page">Jays Web App Projects</a></h1>
+        <h2>Wikipedia Search</h2>
           <div class="heading-image">
-            <a href="https://en.wikipedia.org/wiki/Special:Random" target="blank">
+            <a href="https://en.wikipedia.org/wiki/Special:Random" title="Click me to get a random Wikipedia search" target="blank">
               <img src="assets/img/wiki.png" alt="wikipedia W">
             </a>
           </div><!--heading-image-->
 
-        </div><!-- text-center -->
 
-        <input type="form-control" id="searchTerm">
-        <button id="search" type="button" class="btn btn-primary">Submit</button>
 
-        <ul id="output">
+        <div class="search-input">
+          <input type="form-control" id="searchTerm">
+          <button id="search" type="button" class="btn btn-primary">Submit</button>
+        </div>
 
-        </ul>
-    </div>
+
+        <div class="search-results">
+          <ul id="output">
+            <!-- search results will go here -->
+          </ul>
+        </div>
+
+    </div><!-- container text-center -->
 
 
      <!-- BOOSTRAP CORE JAVASCRIPT

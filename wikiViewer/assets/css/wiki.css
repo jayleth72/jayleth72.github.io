@@ -1,16 +1,45 @@
 body {
   font-family: 'Oxygen', sans-serif;
-  background-image: url('http://www.linguisticsociety.org/files/wikipedia_logo_detail.gif');
+  /*background-image: url('http://www.linguisticsociety.org/files/wikipedia_logo_detail.gif');
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
   background-color: #E9E9E9
 }
 
 h1 {
   font-family: 'Baloo Bhaina', cursive;
+  font-size: 3em;
+  background-color: #FF5733;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  display:inline-block;
+  text-shadow: 2px 2px #fff;
+}
+
+h1 a:hover {
+  text-decoration: none;
 }
 
 .heading-image {
   box-shadow: 10px 10px 10px 5px #888888;
   display: inline-block;
+}
+
+.search-input {
+  margin-top: 35px;
+}
+
+.search-results {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-align: left;
+  background-color: #8EF7A8;
+  margin-bottom: 5px;
+  padding: 10px 10px 10px 10px;
 }
