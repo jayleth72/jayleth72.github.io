@@ -40,6 +40,13 @@ ul {
 li {
   text-align: left;
   background-color: #8EF7A8;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
   padding: 10px 10px 10px 10px;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 1.3em;
+}
+
+#searchTerm {
+  width: 500px;
+  font-size: 1.5em;
 }
