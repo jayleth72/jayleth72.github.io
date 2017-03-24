@@ -26,7 +26,14 @@ h1 a:hover {
 }
 
 .search-input {
+  width: 500px;
+  margin: auto;
   margin-top: 35px;
+}
+
+.search-box,.close-icon,.search-input{
+	position: relative;
+	padding: 10px;
 }
 
 .search-results {
@@ -42,11 +49,62 @@ li {
   background-color: #8EF7A8;
   margin-bottom: 7px;
   padding: 10px 10px 10px 10px;
-  font-family: 'Oxygen', sans-serif;
   font-size: 1.3em;
 }
 
 #searchTerm {
-  width: 500px;
+  width: 90%;
   font-size: 1.5em;
+  border: 1px solid #ccc;
+  outline: 0;
+  border-radius: 10px;
+  /*padding: 10px;*/
+}
+
+#searchTerm:focus{
+  box-shadow: 0 0 15px 5px #b0e0ee;
+  border: 2px solid #b0e0ee;
+}
+
+.close-icon {
+  border: 1px solid transparent;
+  background-color: transparent;
+  display: inline-block;
+  vertical-align: middle;
+  outline: 0;
+  cursor: pointer;
+}
+
+.close-icon:after {
+	content: "X";
+  display: block;
+	width: 25px;
+	height: 25px;
+	position: absolute;
+	background-color: #FA9595;
+	z-index:1;
+	right: 35px;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	padding: 2px;
+	border-radius: 50%;
+	text-align: center;
+	color: white;
+	font-weight: normal;
+	font-size: 15px;
+	box-shadow: 0 0 2px #E50F0F;
+	cursor: pointer;
+}
+
+.search-box:not(:valid) ~ .close-icon {
+	display: none;
+}
+
+button {
+  margin-top: 15px;
+  margin-right: 5px;
+  margin-left: 5px;
+  font-size: 1.2em;
+  width: 200px;
 }

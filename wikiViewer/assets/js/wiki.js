@@ -11,10 +11,11 @@ $(document).ready(function(){
       async:false,
       dataType: "json",
       success:function(data){
-        // clear output content
-        $('#output').html('');
+        // clear previous content
+        $('#reset').click();
         var i = 0
         $(data[1]).each(function(){
+          $('results-heading').html('Search Results for: ' + searchTerm);
           $('#output').prepend("<li><a href=" + data[3][i] + ">" + data[1][i] + "</a><p>" + data[2][i] + "</p></li>");
           i++;
         });
@@ -23,5 +24,21 @@ $(document).ready(function(){
         alert("Error");
       }
     });
+  });
+
+  // when press return we also do a search
+  $("#searchTerm").keypress(function(e){
+    // enter key pressed
+    if(e.which == 13) {
+      $('#search').click();
+
+    }
+  });
+
+  // clear search
+  $('#reset').click(function(){
+    $('#output').html('');
+    $('#searchTerm').val('');
+    $('results-heading').html('');
   });
 });
