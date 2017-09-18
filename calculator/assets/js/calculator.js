@@ -20,7 +20,7 @@ $(document).ready(function(){
         else if(inputs.length===1 && operators1.includes(input)===false){
             inputs.push(input);
         }
-        else if(operators1.includes(inputs[inputs.length-1]===false )){
+        else if(operators1.includes(inputs[inputs.length-1])===false ){
             inputs.push(input);
         }
         else if(nums.includes(Number(input)))
@@ -52,7 +52,7 @@ $(document).ready(function(){
             getTotal();
         }
         else{
-            if(inputs[inputs.length-1].indexOf("+","-","/","*","-1")===-1){
+            if(inputs[inputs.length-1].indexOf("+","-","/","*",".")===-1){
                 // last value in input array not an aoperator  
                 getValue(this.id);  
             }
