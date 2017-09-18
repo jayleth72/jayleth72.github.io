@@ -24,7 +24,7 @@ $(document).ready(function(){
             inputs.push(input);
         }
         else if(nums.includes(Number(input)))
-            inputs.push();
+            inputs.push(input);
 
         update();
     }
