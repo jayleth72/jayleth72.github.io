@@ -17,7 +17,7 @@ $(document).ready(function(){
     function getValue(input) {
         if(operators2.includes(inputs[inputs.length-1]===true && input==="."))
             console.log("Duplicate '.' ");
-        else if(inputs.length===1 && operators1.include(input)===false){
+        else if(inputs.length===1 && operators1.includes(input)===false){
             inputs.push(input);
         }
         else if(operators1.includes(inputs[inputs.length-1]===false )){
@@ -54,7 +54,7 @@ $(document).ready(function(){
         else{
             if(inputs[inputs.length-1].indexOf("+","-","/","*","-1")===-1){
                 // last value in input array not an aoperator  
-                getValue(this.id)  
+                getValue(this.id);  
             }
             else{
                 getValue(this.id);
