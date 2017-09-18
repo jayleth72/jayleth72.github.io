@@ -15,8 +15,8 @@ h2{
     background-color: #ffffe6;
     width: 300px;
     height: 80px;
-    border-top-left-radius: 2em;
-    border-top-right-radius: 2em;
+    border-top-left-radius: 1.5em;
+    border-top-right-radius: 1.5em;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -25,27 +25,27 @@ h2{
 }
 
 #calculator {
-    background-color: grey;
+    background-color: #85adad;
     width: 300px;
     padding-top: 20px;
     padding-bottom: 30px;
-    border-bottom-left-radius: 2em;
-    border-bottom-right-radius: 2em;
+    border-bottom-left-radius: 1.5em;
+    border-bottom-right-radius: 1.5em;
     margin-left: auto;
     margin-right: auto;
 }
 
 #steps {
-    padding-left: 50px;
+    /* padding-left: 50px; */
     font-size: 2em;
 }
 
 .bigButton {
-    width: 93px;
+    width: 95px;
 }
 
 a {
     margin: 5px;
-    width: 3vw;
-    height: 3vw;
+    width: 2.8vw;
+    height: 2.8vw;
 }
