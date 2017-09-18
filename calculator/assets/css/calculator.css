@@ -12,7 +12,7 @@ h2{
 }
 
 #calcOutput {
-    background-color: white;
+    background-color: #ffffe6;
     width: 300px;
     height: 80px;
     border-top-left-radius: 2em;
@@ -46,6 +46,6 @@ h2{
 
 a {
     margin: 5px;
-    width: 2.7vw;
-    height: 2.7vw;
+    width: 3vw;
+    height: 3vw;
 }
