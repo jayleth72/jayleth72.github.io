@@ -36,12 +36,12 @@ h2{
 }
 
 #steps {
-    /* padding-left: 50px; */
+    padding-left: 50px; 
     font-size: 2em;
 }
 
 .bigButton {
-    width: 95px;
+    width: 94px;
 }
 
 a {
