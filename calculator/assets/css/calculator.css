@@ -1,4 +1,4 @@
-/* html, body {
+ html, body {
     background-color: #000033;
 }
 
@@ -23,7 +23,7 @@ h2{
     padding-top: 20px;
     font-family: 'Rubik', sans-serif;
 }
-
+/*
 #calculator {
     background-color: #85adad;
     width: 700px;
