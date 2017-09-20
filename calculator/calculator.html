@@ -24,45 +24,56 @@
   </head>
   <body>
 
-    <div class="container text-center">
+    <div class="container">
 
-        <h1><a href="../index.html" title="Back to the Web Apps Home Page">Jays Web App Projects</a></h1>
-        <h2>Jay's Adding Machine</h2>
+        <h1 class="text-center"><a href="../index.html" title="Back to the Web Apps Home Page">Jays Web App Projects</a></h1>
+        <h2 class="text-center">Jay's Adding Machine</h2>
          
-        <div id="calcOutput">
-            <span id="steps" class="text-left">0</span>
+        <div class="row" id="calcOutput">
+            <span id="steps" class="col-xs-12 text-right">0</span>
             <hr>
-        </div>
+        </div><!-- end row -->
 
         <div class="text-center" id="calculator">
-            <a class="btn btn-danger" id="deleteAll">AC</a>
-            <a class="btn btn-danger" id="backOne">CE</a>
-            <a class="btn btn-primary" id="/">/</a>
-            <a class="btn btn-primary" id="*">*</a>
-            <br/>
+            <div class="row">
+                <a class="btn btn-danger col-xs-3" id="deleteAll">AC</a>
+                <a class="btn btn-danger col-xs-3" id="backOne">CE</a>
+                <a class="btn btn-primary col-xs-3" id="/">/</a>
+                <a class="btn btn-primary col-xs-3" id="*">*</a>
+                <br/>
+            </div>
 
-            <a class="btn btn-primary" id="7">7</a>
-            <a class="btn btn-primary" id="8">8</a>
-            <a class="btn btn-primary" id="9">9</a>
-            <a class="btn btn-primary" id="9">-</a>
-            <br/>
+            <div class="row">
+                <a class="btn btn-primary col-xs-3" id="7">7</a>
+                <a class="btn btn-primary col-xs-3" id="8">8</a>
+                <a class="btn btn-primary col-xs-3" id="9">9</a>
+                <a class="btn btn-primary col-xs-3" id="9">-</a>
+                <br/>
+            </div>
 
-            <a class="btn btn-primary" id="4">4</a>
-            <a class="btn btn-primary" id="5">5</a>
-            <a class="btn btn-primary" id="6">6</a>
-            <a class="btn btn-primary" id="+">+</a>
-            <br/> 
-            
-            <a class="btn btn-primary" id="1">1</a>
-            <a class="btn btn-primary" id="2">2</a>
-            <a class="btn btn-primary" id="3">3</a>
-            <a class="btn btn-primary" id=".">.</a>
-            <br/> 
-            
-            <a class="btn btn-primary bigButton" id="0">0</a>
-            <a class="btn btn-primary bigButton" id="total">=</a>
+            <div class="row">    
+                <a class="btn btn-primary col-xs-3" id="4">4</a>
+                <a class="btn btn-primary col-xs-3" id="5">5</a>
+                <a class="btn btn-primary col-xs-3" id="6">6</a>
+                <a class="btn btn-primary col-xs-3" id="+">+</a>
+                <br/> 
+            </div>
+
+            <div class="row"> 
+                <a class="btn btn-primary col-xs-3" id="1">1</a>
+                <a class="btn btn-primary col-xs-3" id="2">2</a>
+                <a class="btn btn-primary col-xs-3" id="3">3</a>
+                <a class="btn btn-primary col-xs-3" id=".">.</a>
+                <br/> 
+            </div>
+
+            <div class="row"> 
+                <a class="btn btn-primary bigButton col-xs-6" id="0">0</a>
+                <a class="btn btn-primary bigButton col-xs-6" id="total">=</a>
+            </div>
+
         </div>
-    </div><!-- container text-center -->
+    </div><!-- container -->
 
 
      <!-- BOOSTRAP CORE JAVASCRIPT
