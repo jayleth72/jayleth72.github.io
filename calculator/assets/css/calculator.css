@@ -51,3 +51,7 @@ a {
     width: auto;
     height: 50px; 
 }  */
+
+button {
+    margin: 5px;
+}
