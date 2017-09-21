@@ -34,6 +34,7 @@ h2{
     margin-left: auto;
     margin-right: auto; */
     padding-left: 150px;
+}   
 /*
 #steps {
     text-align: left; 
@@ -53,6 +54,6 @@ a {
 }  */
 
 button {
-    margin: 5px;
+    margin: 10px;
     width: 50px;
 }
